@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ThemeService } from '../../services/theme';
-import { Language, TranslationService } from '../../services/translation';
+import { TranslationService } from '../../services/translation';
 
 @Component({
   selector: 'app-navbar',
@@ -12,5 +12,4 @@ import { Language, TranslationService } from '../../services/translation';
 export class NavbarComponent {
   ts = inject(TranslationService);
   themeService = inject(ThemeService);
-  languages: Language[] = ['en', 'es', 'it'];
 }

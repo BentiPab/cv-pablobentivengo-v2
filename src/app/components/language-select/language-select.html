@@ -1,0 +1,20 @@
+<aside class="fixed bottom-4 right-4 z-40">
+  <div class="inline-flex items-center p-1 rounded-full border border-neutral-200/90 dark:border-neutral-800 bg-white/90 dark:bg-neutral-900/90 backdrop-blur-md shadow-lg shadow-black/10 dark:shadow-black/50 text-[11px] font-mono">
+    <span class="pl-2 pr-1 text-neutral-400 dark:text-neutral-500 select-none">🌐</span>
+    @for (lang of languages; track lang) {
+      <button
+        (click)="ts.setLanguage(lang)"
+        type="button"
+        [class.bg-neutral-900]="ts.currentLang() === lang"
+        [class.text-white]="ts.currentLang() === lang"
+        [class.dark:bg-white]="ts.currentLang() === lang"
+        [class.dark:text-neutral-900]="ts.currentLang() === lang"
+        [class.font-semibold]="ts.currentLang() === lang"
+        [class.text-neutral-600]="ts.currentLang() !== lang"
+        [class.dark:text-neutral-400]="ts.currentLang() !== lang"
+        class="px-2 py-0.5 rounded-full uppercase cursor-pointer hover:text-neutral-950 dark:hover:text-white transition-all">
+        {{ lang }}
+      </button>
+    }
+  </div>
+</aside>

@@ -9,7 +9,7 @@
   </div>
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-    @for (project of projects(); track project.title) {
+    @for (project of projects(); track $index) {
       <div class="flex flex-col justify-between p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-900/30 hover:border-neutral-300 dark:hover:border-neutral-700 hover:bg-white dark:hover:bg-neutral-900/50 shadow-sm dark:shadow-none transition-all duration-200 group">
 
         <div class="space-y-3">
