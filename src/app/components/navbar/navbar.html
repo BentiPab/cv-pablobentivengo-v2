@@ -1,0 +1,54 @@
+<header class="fixed top-4 inset-x-0 z-50 flex justify-center px-4">
+  <nav class="flex items-center gap-3 sm:gap-5 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full border border-neutral-200 dark:border-neutral-800 bg-white/80 dark:bg-neutral-900/80 backdrop-blur-md shadow-lg shadow-black/5 dark:shadow-black/40 text-sm transition-colors duration-300">
+    <a href="#about" class="text-neutral-600 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-white transition-colors">
+      {{ ts.translate('nav.about') }}
+    </a>
+    <a href="#experience" class="text-neutral-600 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-white transition-colors">
+      {{ ts.translate('nav.experience') }}
+    </a>
+    <a href="#projects" class="text-neutral-600 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-white transition-colors">
+      {{ ts.translate('nav.projects') }}
+    </a>
+    <a href="#skills" class="text-neutral-600 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-white transition-colors">
+      {{ ts.translate('nav.stack') }}
+    </a>
+
+
+    <div class="flex items-center gap-1 text-xs font-mono border-l border-neutral-300 dark:border-neutral-700 pl-2 sm:pl-3">
+      @for (lang of languages; track lang) {
+        <button
+          (click)="ts.setLanguage(lang)"
+          type="button"
+          [class.text-neutral-950]="ts.currentLang() === lang"
+          [class.dark:text-white]="ts.currentLang() === lang"
+          [class.font-bold]="ts.currentLang() === lang"
+          [class.text-neutral-400]="ts.currentLang() !== lang"
+          [class.dark:text-neutral-500]="ts.currentLang() !== lang"
+          class="px-1 py-0.5 rounded cursor-pointer hover:text-neutral-950 dark:hover:text-white transition-colors uppercase">
+          {{ lang }}
+        </button>
+      }
+    </div>
+
+
+    <button
+      (click)="themeService.toggleTheme()"
+      type="button"
+      aria-label="Toggle color theme"
+      class="inline-flex items-center justify-center p-1.5 rounded-full cursor-pointer text-neutral-600 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-white hover:bg-neutral-100 dark:hover:bg-neutral-800 active:scale-95 transition-all duration-200 focus:outline-none">
+      @if (themeService.isDarkMode()) {
+        <svg class="w-4 h-4 fill-none stroke-current" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+      } @else {
+        <svg class="w-4 h-4 fill-none stroke-current" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+        </svg>
+      }
+    </button>
+
+    <a href="#contact" class="px-3.5 py-1.5 rounded-full bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-900 font-medium hover:bg-neutral-800 dark:hover:bg-white active:scale-95 transition-all duration-200 shadow-sm">
+      {{ ts.translate('nav.contact') }}
+    </a>
+  </nav>
+</header>

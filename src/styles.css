@@ -1,0 +1,65 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-neutral-50, #fafafa);
+  color: var(--color-neutral-800, #262626);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+:is(.dark) body {
+  background-color: var(--color-neutral-950, #0a0a0a);
+  color: var(--color-neutral-200, #e5e5e5);
+}
+
+@media print {
+  app-navbar,
+  app-footer,
+  button,
+  .print\:hidden {
+    display: none !important;
+  }
+
+  body {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+  }
+
+  main {
+    padding-top: 0 !important;
+    max-width: 100% !important;
+    gap: 1.5rem !important;
+  }
+
+  section,
+  div[class*="rounded-"] {
+    break-inside: avoid;
+  }
+
+  h1, h2, h3 {
+    color: #000000 !important;
+  }
+
+  p, span, li {
+    color: #374151 !important;
+  }
+
+  .border-neutral-800,
+  .border-neutral-200 {
+    border-color: #e5e7eb !important;
+  }
+
+  .bg-neutral-900\/30,
+  .bg-neutral-900\/40,
+  .bg-neutral-800\/80,
+  .bg-white\/70 {
+    background-color: #f9fafb !important;
+  }
+}

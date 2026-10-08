@@ -1,0 +1,47 @@
+<section class="space-y-8">
+  <div class="space-y-1">
+    <h2 class="text-2xl font-bold tracking-tight text-neutral-900 dark:text-white">
+      {{ ts.translate('skills.title') }}
+    </h2>
+    <p class="text-sm text-neutral-600 dark:text-neutral-400">
+      {{ ts.translate('skills.subtitle') }}
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    @for (category of skillCategories; track category.title) {
+      <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-900/40 hover:border-neutral-300 dark:hover:border-neutral-700 transition-colors shadow-sm dark:shadow-none">
+        <h3 class="text-sm font-semibold uppercase tracking-wider text-neutral-700 dark:text-neutral-300 mb-3 font-mono">
+          {{ category.title }}
+        </h3>
+        <div class="flex flex-wrap gap-2">
+          @for (item of category.skills; track item) {
+            <span class="px-2.5 py-1 text-xs rounded-md bg-neutral-100 dark:bg-neutral-800/80 text-neutral-700 dark:text-neutral-300 border border-neutral-200/80 dark:border-neutral-700/50 hover:border-neutral-400 dark:hover:border-neutral-500 hover:text-neutral-950 dark:hover:text-white transition-all">
+              {{ item }}
+            </span>
+          }
+        </div>
+      </div>
+    }
+  </div>
+
+  <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-900/40 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 shadow-sm dark:shadow-none">
+    <span class="text-sm font-semibold uppercase tracking-wider text-neutral-700 dark:text-neutral-300 font-mono">
+      {{ ts.translate('skills.languages') }}
+    </span>
+    <div class="flex flex-wrap gap-6 text-sm text-neutral-600 dark:text-neutral-400">
+      <div>
+        <span class="text-neutral-900 dark:text-white font-medium">{{ ts.translate('skills.spanish') }}:</span>
+        {{ ts.translate('skills.native') }}
+      </div>
+      <div>
+        <span class="text-neutral-900 dark:text-white font-medium">{{ ts.translate('skills.english') }}:</span>
+        {{ ts.translate('skills.advanced') }}
+      </div>
+      <div>
+        <span class="text-neutral-900 dark:text-white font-medium">{{ ts.translate('skills.italian') }}:</span>
+        {{ ts.translate('skills.intermediate') }}
+      </div>
+    </div>
+  </div>
+</section>

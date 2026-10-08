@@ -1,0 +1,137 @@
+{
+  "nav": {
+    "about": "Su di me",
+    "experience": "Esperienza",
+    "projects": "Progetti",
+    "stack": "Competenze",
+    "contact": "Contatto"
+  },
+  "hero": {
+    "available": "Disponibile per nuove opportunità",
+    "greeting": "Ciao, sono",
+    "role": "Full-Stack Software Engineer",
+    "bio": "Appassionato di architetture backend scalabili, applicazioni web ad alte prestazioni ed esperienze utente pulite. Specializzato in TypeScript, Node.js, C# ed ecosistemi frontend moderni.",
+    "downloadCv": "Scarica CV",
+    "getInTouch": "Contattami"
+  },
+  "experience": {
+    "title": "Esperienza Lavorativa",
+    "subtitle": "Ruoli di ingegneria del software e responsabilità principali.",
+    "items": [
+      {
+        "role": "Full Stack Web Developer",
+        "company": "Abstract",
+        "location": "Remoto (Italia)",
+        "period": "Marzo 2022 — Presente",
+        "description": [
+          "Sviluppo di API RESTful e interfacce interattive tramite TypeScript, React.js, Node.js e MongoDB.",
+          "Integrazione di servizi terzi e ottimizzazione delle performance per soluzioni web scalabili.",
+          "Gestione di pipeline di rilascio end-to-end su ambienti di Produzione e QA.",
+          "Referente tecnico principale lato sviluppatore per Application Management Services (AMS)."
+        ],
+        "technologies": ["TypeScript", "React.js", "Node.js", "Express.js", "MongoDB", "GraphQL"]
+      },
+      {
+        "role": "Front-end Web Developer",
+        "company": "Scandiweb",
+        "location": "Remoto (Lettonia)",
+        "period": "Gennaio 2022 — Marzo 2022",
+        "description": [
+          "Contributo allo sviluppo e al collaudo di prodotti software orientati al cliente durante l'intero SDLC.",
+          "Collaborazione con ingegneri senior per troubleshooting, debug e risoluzione di criticità su UI e integrazioni."
+        ],
+        "technologies": ["JavaScript", "React.js", "HTML/CSS", "Git", "Agile"]
+      },
+      {
+        "role": "Full Stack Web Developer",
+        "company": "Libero Professionista",
+        "location": "Remoto",
+        "period": "Gennaio 2020 — Gennaio 2022",
+        "description": [
+          "Progettazione e realizzazione di applicazioni web su misura per piccole imprese secondo requisiti personalizzati.",
+          "Implementazione di servizi backend e database con Node.js, Java (Spring Boot), MongoDB e PostgreSQL.",
+          "Costruzione di frontend moderni e reattivi utilizzando React.js e Next.js."
+        ],
+        "technologies": [
+          "React.js",
+          "Next.js",
+          "Node.js",
+          "Java",
+          "Spring Boot",
+          "PostgreSQL",
+          "MongoDB"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Progetti in Evidenza",
+    "subtitle": "Soluzioni per clienti, piattaforme di produzione e progetti di sviluppo.",
+    "private": "PRIVATO",
+    "sourceCode": "Codice Sorgente",
+    "liveDemo": "Live Demo",
+    "items": [
+      {
+        "title": "Empanapp (Suite di Gestione Gastronomica)",
+        "description": "Piattaforma completa di punto vendita (POS) e gestione aziendale progettata per la ristorazione. Include tracciamento del ciclo di vita degli ordini, controllo di inventario e scorte, motore di sconti promozionali e report vendite in tempo reale.",
+        "technologies": ["Next.js", "TypeScript", "Neon DB (PostgreSQL)", "Tailwind CSS"]
+      },
+      {
+        "title": "Bridge per Stampanti Termiche e Fiscali",
+        "description": "Middleware backend dedicato per orchestrare routine di stampa termica ESC/POS ed emissione di scontrini fiscali conformi direttamente dall'applicazione web all'hardware locale.",
+        "technologies": [
+          "Node.js",
+          "Express.js",
+          "TypeScript",
+          "Hardware Integration",
+          "REST APIs"
+        ],
+        "github": "https://github.com/BentiPab/empanapp-printer-bridge"
+      },
+      {
+        "title": "Movie Time",
+        "description": "Moderna applicazione per scoprire novità cinematografiche e digitali, che integra API multimediali esterne per determinare dinamicamente la disponibilità dei servizi di streaming in base al paese.",
+        "technologies": ["Next.js", "TypeScript", "RESTful APIs", "Tailwind CSS", "Vercel"],
+        "github": "https://github.com/BentiPab/moviev2",
+        "link": "https://movie-time-ashy.vercel.app/"
+      },
+      {
+        "title": "Karting Championship Tracker",
+        "description": "Dashboard reattiva creata con Angular per visualizzare classifiche, telemetria dei giri e risultati di tappa per un campionato di kart, utilizzando Google Sheets come CMS headless leggero e in tempo reale.",
+        "technologies": ["Angular", "TypeScript", "Google Sheets API", "Netlify", "Tailwind CSS"],
+        "github": "https://github.com/BentiPab/karting-tourney",
+        "link": "https://torneo-sin-frenos.netlify.app/"
+      },
+      {
+        "title": "Piattaforma Interattiva & Portale Multimediale per Matrimonio",
+        "description": "Applicazione web privata in tempo reale per eventi, con trivia interattiva a punteggio dinamico, autenticazione utenti e portale sicuro per il caricamento di foto supportato da cloud storage.",
+        "technologies": ["Angular", "TypeScript", "Supabase", "Tailwind CSS"]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Competenze & Tecnologie",
+    "subtitle": "Framework, linguaggi e toolset tecnico.",
+    "languages": "Lingue",
+    "spanish": "Spagnolo",
+    "english": "Inglese",
+    "italian": "Italiano",
+    "native": "Madrelingua",
+    "advanced": "Avanzato",
+    "intermediate": "Intermedio"
+  },
+  "contact": {
+    "title": "Mettiti in Contatto",
+    "subtitle": "Se hai una domanda, una proposta di progetto o vuoi semplicemente connetterti, scrivimi pure.",
+    "email": "Email",
+    "sendEmail": "Invia Email",
+    "copyAddress": "Copia Indirizzo",
+    "copied": "Copiato!",
+    "phoneWhatsapp": "Telefono / WhatsApp",
+    "chatWhatsapp": "Scrivi su WhatsApp",
+    "bannerText": "Disponibile per ruoli da remoto e contratti"
+  },
+  "footer": {
+    "builtWith": "Sviluppato con Angular & Tailwind CSS"
+  }
+}

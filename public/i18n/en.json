@@ -1,0 +1,137 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "stack": "Stack",
+    "contact": "Contact"
+  },
+  "hero": {
+    "available": "Available for new opportunities",
+    "greeting": "Hi, I'm",
+    "role": "Full-Stack Software Engineer",
+    "bio": "Passionate about crafting scalable backend architectures, high-performance web applications, and clean user experiences. Focused on TypeScript, Node.js, C#, and modern frontend ecosystems.",
+    "downloadCv": "Download CV",
+    "getInTouch": "Get in touch"
+  },
+  "experience": {
+    "title": "Work Experience",
+    "subtitle": "Software engineering roles and key responsibilities.",
+    "items": [
+      {
+        "role": "Full Stack Web Developer",
+        "company": "Abstract",
+        "location": "Remote (Italy)",
+        "period": "March 2022 — Present",
+        "description": [
+          "Developed RESTful APIs and interactive user interfaces using TypeScript, React.js, Node.js, and MongoDB.",
+          "Integrated third-party services and optimized web application performance for scalable solutions.",
+          "Managed end-to-end deployment pipelines across Production and QA environments.",
+          "Served as the primary technical point of contact for developer-side Application Management Services (AMS)."
+        ],
+        "technologies": ["TypeScript", "React.js", "Node.js", "Express.js", "MongoDB", "GraphQL"]
+      },
+      {
+        "role": "Front-end Web Developer",
+        "company": "Scandiweb",
+        "location": "Remote (Latvia)",
+        "period": "January 2022 — March 2022",
+        "description": [
+          "Contributed to the development and testing of client-facing software products throughout the SDLC.",
+          "Collaborated with senior engineers to troubleshoot, debug, and resolve UI and integration issues."
+        ],
+        "technologies": ["JavaScript", "React.js", "HTML/CSS", "Git", "Agile"]
+      },
+      {
+        "role": "Full Stack Web Developer",
+        "company": "Independent Contractor",
+        "location": "Remote",
+        "period": "January 2020 — January 2022",
+        "description": [
+          "Designed and delivered tailored web applications for small businesses based on custom client requirements.",
+          "Implemented backend services and databases using Node.js, Java (Spring Boot), MongoDB, and PostgreSQL.",
+          "Built modern, responsive frontends utilizing React.js and Next.js."
+        ],
+        "technologies": [
+          "React.js",
+          "Next.js",
+          "Node.js",
+          "Java",
+          "Spring Boot",
+          "PostgreSQL",
+          "MongoDB"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Selected client solutions, production platforms, and engineering builds.",
+    "private": "PRIVATE",
+    "sourceCode": "Source Code",
+    "liveDemo": "Live Demo",
+    "items": [
+      {
+        "title": "Empanapp (Gastronomy Management Suite)",
+        "description": "Comprehensive point-of-sale and business management platform designed for restaurant operations. Features end-to-end order lifecycle tracking, inventory and stock control, promotional discount engines, and real-time sales reporting.",
+        "technologies": ["Next.js", "TypeScript", "Neon DB (PostgreSQL)", "Tailwind CSS"]
+      },
+      {
+        "title": "Thermal & Fiscal Printer Bridge",
+        "description": "Dedicated backend middleware bridge built to orchestrate ESC/POS thermal printing routines and compliant fiscal receipt generation directly from the web management app to local hardware.",
+        "technologies": [
+          "Node.js",
+          "Express.js",
+          "TypeScript",
+          "Hardware Integration",
+          "REST APIs"
+        ],
+        "github": "https://github.com/BentiPab/empanapp-printer-bridge"
+      },
+      {
+        "title": "Movie Time",
+        "description": "Modern movie discovery application delivering up-to-date theatrical and digital releases, integrating external media APIs to dynamically determine country-specific streaming service availability.",
+        "technologies": ["Next.js", "TypeScript", "RESTful APIs", "Tailwind CSS", "Vercel"],
+        "github": "https://github.com/BentiPab/moviev2",
+        "link": "https://movie-time-ashy.vercel.app/"
+      },
+      {
+        "title": "Karting Championship Tracker",
+        "description": "Reactive dashboard built with Angular to visualize standings, lap telemetry, and stage results for a friendly karting championship, using Google Sheets as a lightweight, real-time headless CMS.",
+        "technologies": ["Angular", "TypeScript", "Google Sheets API", "Netlify", "Tailwind CSS"],
+        "github": "https://github.com/BentiPab/karting-tourney",
+        "link": "https://torneo-sin-frenos.netlify.app/"
+      },
+      {
+        "title": "Interactive Wedding Platform & Media Portal",
+        "description": "Private real-time web application built for an event, featuring interactive guest trivia with dynamic scoring, user authentication, and a secure media upload portal backed by cloud storage.",
+        "technologies": ["Angular", "TypeScript", "Supabase", "Tailwind CSS"]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "subtitle": "Frameworks, languages, and technical toolset.",
+    "languages": "Languages",
+    "spanish": "Spanish",
+    "english": "English",
+    "italian": "Italian",
+    "native": "Native",
+    "advanced": "Advanced",
+    "intermediate": "Intermediate"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Whether you have a question, a project proposal, or just want to connect, feel free to reach out.",
+    "email": "Email",
+    "sendEmail": "Send Email",
+    "copyAddress": "Copy Address",
+    "copied": "Copied!",
+    "phoneWhatsapp": "Phone / WhatsApp",
+    "chatWhatsapp": "Chat on WhatsApp",
+    "bannerText": "Available for remote engineering roles & contracts"
+  },
+  "footer": {
+    "builtWith": "Built with Angular & Tailwind CSS"
+  }
+}

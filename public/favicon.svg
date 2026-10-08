@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --text: #ffffff;
+      --accent: #10b981;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #171717;
+        --text: #ffffff;
+        --accent: #10b981;
+      }
+    }
+  </style>
+  <!-- Base redondeada (Squircle) -->
+  <rect width="32" height="32" rx="7" fill="var(--bg)"/>
+  
+  <!-- Letras PB -->
+  <text 
+    x="14.5" 
+    y="22" 
+    font-family="system-ui, -apple-system, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" 
+    font-size="14" 
+    font-weight="800" 
+    fill="var(--text)" 
+    letter-spacing="-0.5px"
+    text-anchor="middle">
+    PB
+  </text>
+
+  <!-- Punto de acento verde esmeralda (a juego con el badge Available) -->
+  <circle cx="26" cy="21" r="2" fill="var(--accent)"/>
+</svg>

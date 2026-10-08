@@ -1,0 +1,81 @@
+<section class="space-y-8 pt-4">
+  <div class="space-y-2">
+    <h2 class="text-2xl font-bold tracking-tight text-neutral-900 dark:text-white">
+      {{ ts.translate('contact.title') }}
+    </h2>
+    <p class="text-sm text-neutral-600 dark:text-neutral-400 max-w-lg leading-relaxed">
+      {{ ts.translate('contact.subtitle') }}
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+    <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-900/40 flex flex-col justify-between gap-4 shadow-sm dark:shadow-none transition-colors">
+      <div class="space-y-1">
+        <span class="text-xs font-mono text-neutral-500 uppercase tracking-wider">
+          {{ ts.translate('contact.email') }}
+        </span>
+        <p class="text-neutral-900 dark:text-neutral-200 font-medium select-all">{{ email }}</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <a
+          [href]="'mailto:' + email"
+          class="px-3.5 py-1.5 rounded-lg bg-neutral-900 dark:bg-neutral-800 hover:bg-neutral-800 dark:hover:bg-neutral-700 text-white dark:text-neutral-200 text-xs font-medium transition-colors shadow-sm">
+          {{ ts.translate('contact.sendEmail') }}
+        </a>
+        <button
+          (click)="copyEmail()"
+          type="button"
+          class="px-3.5 py-1.5 rounded-lg border border-neutral-300 dark:border-neutral-700/60 bg-white dark:bg-transparent hover:bg-neutral-100 dark:hover:bg-neutral-800 text-neutral-700 dark:text-neutral-300 text-xs font-medium transition-colors active:scale-95">
+          {{ copied() ? ts.translate('contact.copied') : ts.translate('contact.copyAddress') }}
+        </button>
+      </div>
+    </div>
+
+
+    <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-900/40 flex flex-col justify-between gap-4 shadow-sm dark:shadow-none transition-colors">
+      <div class="space-y-1">
+        <span class="text-xs font-mono text-neutral-500 uppercase tracking-wider">
+          {{ ts.translate('contact.phoneWhatsapp') }}
+        </span>
+        <p class="text-neutral-900 dark:text-neutral-200 font-medium">{{ phone }}</p>
+      </div>
+      <div>
+        <a
+          [href]="'https://wa.me/' + cleanPhone"
+          target="_blank"
+          rel="noreferrer"
+          class="inline-block px-3.5 py-1.5 rounded-lg bg-neutral-900 dark:bg-neutral-800 hover:bg-neutral-800 dark:hover:bg-neutral-700 text-white dark:text-neutral-200 text-xs font-medium transition-colors shadow-sm">
+          {{ ts.translate('contact.chatWhatsapp') }}
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-5 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-900/40 flex flex-col sm:flex-row sm:items-center justify-between gap-4 shadow-sm dark:shadow-none transition-colors">
+    <div class="flex items-center gap-3">
+      <div class="h-2 w-2 rounded-full bg-emerald-500"></div>
+      <span class="text-sm text-neutral-700 dark:text-neutral-300">
+        {{ ts.translate('contact.bannerText') }}
+      </span>
+    </div>
+    <div class="flex items-center gap-4 text-sm font-medium">
+      <a
+        href="https://linkedin.com/in/pablo-bentivengo"
+        target="_blank"
+        rel="noreferrer"
+        class="text-neutral-600 dark:text-neutral-400 hover:text-neutral-950 dark:hover:text-white transition-colors flex items-center gap-1.5">
+        <span>LinkedIn</span>
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+      </a>
+      <a
+        href="https://github.com/BentiPab"
+        target="_blank"
+        rel="noreferrer"
+        class="text-neutral-600 dark:text-neutral-400 hover:text-neutral-950 dark:hover:text-white transition-colors flex items-center gap-1.5">
+        <span>GitHub</span>
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+      </a>
+    </div>
+  </div>
+</section>
